@@ -3,9 +3,9 @@ package com.yy.live.kotlincollection;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-
 import com.yy.live.kotlincollection.base.BaseKotlin;
 import com.yy.live.kotlincollection.classextends.ExtendsCls;
+import com.yy.live.kotlincollection.interfaces.ChildImpl;
 
 /**
  * @className: MainActivity
@@ -26,6 +26,19 @@ public class MainActivity extends AppCompatActivity {
         baseKotlin();
         // class extends
         classExtends();
+        // interfaces
+        interfaces();
+    }
+
+    /**
+     * interfaces
+     * @author leibing
+     * @createTime 2017/11/6
+     */
+    private void interfaces() {
+        ChildImpl childImpl = new ChildImpl();
+        childImpl.a();
+        childImpl.b();
     }
 
     /**
