@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.yy.live.kotlincollection.base.BaseKotlin;
+import com.yy.live.kotlincollection.classextends.ExtendsCls;
 
 /**
  * @className: MainActivity
@@ -23,6 +24,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // base kotlin
         baseKotlin();
+        // class extends
+        classExtends();
+    }
+
+    /**
+     * class extends
+     * @author leibing
+     * @createTime 2017/11/6
+     */
+    private void classExtends() {
+        ExtendsCls extendCls = new ExtendsCls();
+        extendCls.a();
     }
 
     /**
